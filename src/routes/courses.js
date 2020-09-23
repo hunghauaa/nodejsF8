@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const courseController = require('../app/controllers/CouseController')
-
+const auth = require('../middleware/authorization')
 router.get('/create',courseController.getCreateCourse)
 router.post('/create',courseController.createDoc)
 router.get('/:slug/edit',courseController.edit)

@@ -7,7 +7,7 @@ class MeController{
             // .then(courses=>res.render('myCourse',{courses : mg.multipleMongooseToObject(courses)}))
             .then(courses => res.render('myCourse',{courses : mg.multipleMongooseToObject(courses)}))
             .catch(next)
-    }
+    } 
 }
 
 module.exports = new MeController;

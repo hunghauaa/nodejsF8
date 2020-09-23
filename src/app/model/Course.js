@@ -14,15 +14,6 @@ const Course = new Schema({
 },{
   timestamps: true,
 });
-const User = new Schema({
-  name: {type : String, default:'' },
-  description: {type : String, maxlength:600 },
-  image: {type : String, maxlength:255 },
-  videoId: {type : String, maxlength:255 },
-  slug: { type: String, slug: "name", unique: true }  
-},{
-  timestamps: true,
-});
 // Course.plugin(mongooseSlugPlugin);
 
 module.exports = mongoose.model('Course', Course);

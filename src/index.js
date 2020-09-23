@@ -22,8 +22,6 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', 'hbs');
 app.set('views',path.join(__dirname, 'resources/views'));
-console.log(path.join(__dirname, 'resources/views'));
-
 
 const port = 8080;
 
